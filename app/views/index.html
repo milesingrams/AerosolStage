@@ -1,0 +1,9 @@
+{% extends 'default.html' %}
+
+{% block content %}
+	<div ui-view class="main-view" autoscroll="false"/>
+		<script type="text/javascript">
+			window.user = {{user|safe}};
+		</script>
+	</div>
+{% endblock %}

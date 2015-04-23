@@ -1,0 +1,9 @@
+$icon-font-path: "/lib/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/lib/font-awesome/fonts";
+$link-color: #333;
+$brand-primary: #008CBE;
+$brand-info: #30BCAE;
+@import "../../lib/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import "../../lib/font-awesome/scss/font-awesome";
+@import "utilities";
+@import "common";

@@ -1,0 +1,47 @@
+<div class="ct-header">
+	<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" ng-click="navCollapsed = !navCollapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../" class="navbar-brand"><i class="fa fa-spinner"></i></a>
+			</div>
+			<nav collapse="navCollapsed" class="collapse navbar-collapse navbar-responsive-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li><a href="">Load</a>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li><a href="/signout">Save</a>
+				</ul>
+				<ul class="nav navbar-nav navbar-right" ng-show="global.authenticated">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							{{global.user.username}} <span class="fa fa-user"></span> <span class="fa fa-caret-down"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="/signout">Sign Out</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<div class="btn-toolbar main-toolbar" role="toolbar">
+	<div class="btn-group" role="group">
+		<button type="button" class="btn btn-primary" ng-model="selectedTool" btn-radio="'movement'"><i class="fa fa-ellipsis-h"></i></button>
+		<button type="button" class="btn btn-primary" ng-model="selectedTool" btn-radio="'line'">Line</button>
+		<button type="button" class="btn btn-primary" ng-model="selectedTool" btn-radio="'arc'">Arc</button>
+	</div>
+	<div class="btn-group" role="group">
+		<button type="button" class="btn btn-default">1</button>
+		<button type="button" class="btn btn-default">2</button>
+		<button type="button" class="btn btn-default">3</button>
+	</div>
+</div>
+<stage-area class="main-stage"></stage-area>

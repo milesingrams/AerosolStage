@@ -1,0 +1,12 @@
+<div class="filter-bar" ng-class="{'input-group': prefixes}">
+	<div class="input-group-btn" dropdown is-open="dropdownOpen" ng-show="prefixes">
+		<button class="btn btn-default dropdown-toggle"><span class="fa fa-caret-down"></span> {{prefix}} </button>
+		<ul class="dropdown-menu">
+			<li><a ng-click="setPrefix('')">All</a></li>
+			<li ng-repeat="pre in prefixes">
+				<a ng-click="setPrefix(pre)">{{pre}}</a>
+			</li>
+		</ul>
+	</div>
+	<input type="text" class="form-control" ng-model="suffix" ng-change="updateSuffix()" ng-enter="return()" placeholder="{{placeholder}}"></input>
+</div>

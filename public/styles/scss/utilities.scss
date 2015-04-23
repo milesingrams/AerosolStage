@@ -1,0 +1,17 @@
+@mixin min-width($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content 
+  }
+}
+
+@mixin max-width($device-width) {
+  @media screen and (max-width: $device-width - 1) {
+    @content 
+  }
+}
+
+@mixin min-max-width($lower-device-width, $upper-device-width) {
+  @media screen and (min-width: $lower-device-width) and (max-width: $upper-device-width - 1) {
+    @content 
+  }
+}
