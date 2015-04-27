@@ -6754,7 +6754,7 @@ body {
 .main-stage {
   display: block;
   width: 100%;
-  height: calc(100% - 55px);
+  height: calc(100% - 54px);
   background: linear-gradient(-45deg, #eeeeee 0%, white 100%); }
   .main-stage .main-map {
     width: 100%;
@@ -6770,6 +6770,10 @@ body {
       fill: none;
       stroke: #ccc;
       stroke-dasharray: 2,2; }
+    .main-stage .main-map .line {
+      stroke: steelblue;
+      stroke-width: 2px;
+      vector-effect: non-scaling-stroke; }
   .main-stage .mini-map {
     position: absolute;
     bottom: 20px;

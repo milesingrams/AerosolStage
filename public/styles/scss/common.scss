@@ -20,7 +20,7 @@ body {
 .main-stage {
 	display: block;
 	width: 100%;
-	height: calc(100% - 55px);
+	height: calc(100% - 54px);
 	background: linear-gradient(-45deg, #eee 0%, #fff 100%);
 
 	.main-map {
@@ -43,6 +43,12 @@ body {
 			fill: none;
 			stroke: #ccc;
 			stroke-dasharray: 2,2;
+		}
+
+		.line {
+			stroke: steelblue;
+			stroke-width: 2px;
+			vector-effect: non-scaling-stroke;
 		}
 	}
 
